@@ -7,9 +7,10 @@ export default function CoverImage({ title, coverImage, slug }) {
     <Image
       width={2000}
       height={600}
+      layout="responsive"
       alt={`Cover Image for ${title}`}
       src={coverImage?.node.sourceUrl}
-      className={cn('shadow-small object-cover', {
+      className={cn('shadow-small object-cover w-full', {
         'hover:shadow-medium transition-shadow duration-200': slug,
       })}
     />

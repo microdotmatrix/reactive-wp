@@ -11,6 +11,11 @@ module.exports = {
       process.env.WORDPRESS_API_URL.match(/(http(?:s)?:\/\/)(.*)/)[2], // Valid WP Image domain.
       '2.gravatar.com',
       'secure.gravatar.com',
+      'cdn.shopify.com'
     ],
   },
+  env: {
+    SHOPIFY_STOREFRONT_URL: process.env.SHOPIFY_STOREFRONT_URL,
+    SHOPIFY_ACCESS_TOKEN: process.env.SHOPIFY_ACCESS_TOKEN
+  }
 }

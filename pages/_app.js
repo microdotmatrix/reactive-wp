@@ -1,4 +1,4 @@
-import '../styles/index.css'
+import '../styles/theme/_colors.scss'
 import '../styles/app.scss'
 
 function MyApp({ Component, pageProps }) {

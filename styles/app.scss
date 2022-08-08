@@ -2,6 +2,8 @@
 
 @forward 'utilities/tailwind';
 @forward 'utilities/wp'; 
+@forward 'theme/light';
+@forward 'theme/dark';
 
 body {
   display: flex;
@@ -14,9 +16,8 @@ body {
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: var(--light-1);
-  background-color: var(--dark-1);
+  color: var(--text-1);
+  background-color: var(--background-1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

@@ -17,7 +17,6 @@ export default function Index({ allPosts: { edges }, preview }) {
         <title>{CMS_NAME}</title>
       </Head>
       <Container>
-        <Intro />
         {heroPost && (
           <HeroPost
             title={heroPost.title}

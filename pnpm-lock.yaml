@@ -6,6 +6,7 @@ specifiers:
   '@iconify/react': ^3.2.2
   '@splidejs/react-splide': ^0.7.8
   '@tailwindcss/typography': ^0.5.4
+  accoutrement: ^4.0.3
   autoprefixer: 10.4.7
   classnames: 2.3.1
   date-fns: 2.28.0
@@ -26,6 +27,7 @@ specifiers:
 dependencies:
   '@headlessui/react': 1.6.6_biqbaboplfbrettd7655fr4n2y
   '@splidejs/react-splide': 0.7.8
+  accoutrement: 4.0.3
   classnames: 2.3.1
   date-fns: 2.28.0
   gerillass: 1.3.1_webpack@5.74.0
@@ -1028,6 +1030,10 @@ packages:
 
   /abab/2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
+    dev: false
+
+  /accoutrement/4.0.3:
+    resolution: {integrity: sha512-bnsbz2kP/MxFgiQIRTrJNH19r1ap6e5VoJUkAlZuRd8ze5CkRsqcoO+GwC5Fir+TUhyPY2lh4gECxzyVHfxuDA==}
     dev: false
 
   /acorn-globals/6.0.0:

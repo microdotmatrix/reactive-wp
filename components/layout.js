@@ -8,7 +8,7 @@ export default function Layout({ preview, children }) {
       <Meta />
       <div className="grid w-full h-full">
         <Alert preview={preview} />
-        <main class="flex-1">{children}</main>
+        <main className="flex-1">{children}</main>
       </div>
       <Footer />
     </>

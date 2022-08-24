@@ -1,0 +1,117 @@
+@use 'gerillass' as *;
+
+@forward 'functions';
+
+// Set breakpoints used by Gerillass breakpoint mixin
+$map-for-breakpoints: (
+  "xsmall":   32rem,   // 512px
+  "small":    48rem,   // 768px
+  "medium":   64rem,   // 1024px
+  "large":    80rem,   // 1280px
+  "xlarge":   90rem   // 1440px
+);
+
+$content-width: map-get($map-for-breakpoints, xlarge);
+
+:where(html) {
+  --container-max: 1140px;
+  --content-width: min(100%,var(--container-max,1140px));
+}
+
+$cool-800: #0f171b;
+$cool-700: #151f25;
+$cool-600: #24333f;
+$cool-500: #364a5d;
+$cool-400: #465E77;
+$cool-300: #75859a;
+$cool-200: #9aa3b4;
+$cool-100: #bbbfcd;
+$cool-50: #e8e9ee;
+
+$purp-600: #1b1325;
+$purp-500: #591c6b;
+$purp-400: #B423CF;
+$purp-300: #cb75d1;
+$purp-200: #d9acce;
+$purp-100: #f3e7ed;
+
+// Quasar Generated color palette:
+// $primary   : #1c2229;
+// $secondary : #0c333b;
+// $accent    : #9C27B0;
+//
+// $dark      : #111217;
+// $light     : #fefef1;
+//
+// $positive  : #3e662d;
+// $negative  : #82000f;
+// $info      : #3d9484;
+// $neutral   : #739690;
+
+// Quasar Palette 2
+$primary   : #364554;
+$secondary : #b3f2ed;
+$accent    : #a32f9a;
+
+$dark      : #101112;
+$dark-page : #0e1012;
+$light     : $cool-50;
+$light-page: $cool-100;
+
+$positive  : #18f273;
+$negative  : #8c0615;
+$info      : #f0ffff;
+$warning   : #eddc21;
+$neutral   :   $cool-200;
+
+$lighter: slate(3);
+$lightest: slate(1);
+$alt-light: ocGray(5);
+
+ //  Made with Geenes | geenes.app
+
+
+// Porting CSS custom props into Sass variables for easier typing shorthand
+$phi:                 var(--phi);
+$e:                   var(--e);
+$pi:                  var(--pi);
+$space:               var(--space-phi);
+$space-phi:           var(--space-phi);
+$space-e:             var(--space-e);
+$space-pi:            var(--space-pi);
+
+$p:                   var(--p);
+$xs:                  0.7rem;
+$sm:                  var(--sm);
+$md:                  var(--md);
+$lg:                  var(--lg);
+$xl:                  var(--xl);
+$xxl:                 var(--xxl);
+$xxxl:                var(--xxxl);
+$xxxxl:               var(--xxxxl);
+
+$h1:                  var(--h1);
+$h2:                  var(--h2);
+$h3:                  var(--h3);
+$h4:                  var(--h4);
+$h5:                  var(--h5);
+$h6:                  var(--h6);
+
+// Some Sass variables to call up fonts imported into "/scss/toolkit/fonts"
+$barlow:             'Barlow', sans-serif;
+$genos:              'Genos', sans-serif;
+$kanit:              'Kanit', sans-serif;
+$jura:               'Jura', sans-serif;
+$montsub:            'Montserrat Subrayada', sans-serif;
+$rubik:              'Rubik Mono One', sans-serif;
+$economica:          'Economica', sans-serif;
+$homenaje:           'Homenaje', sans-serif;
+$runes:              'Noto Sans Runic', sans-serif;
+$saira:              'Saira', sans-serif;
+$strait:             'Strait', sans-serif;
+
+$text-font:           $saira;
+$text-line:           1.618em;
+$text-weight:         333;
+$heading-font:        $montsub;
+$heading-weight:      700;

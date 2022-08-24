@@ -1,9 +1,13 @@
 @use 'gerillass' as *;
 
+@forward 'config';
+
 @forward 'utilities/tailwind';
 @forward 'utilities/wp'; 
 @forward 'theme/light';
 @forward 'theme/dark';
+
+@forward 'components/typography';
 
 body {
   display: flex;
